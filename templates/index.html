@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Speedread</h1>
+    {% for book in books %}
+        <h2>{{ book.title }}</h2>
+        <p>By {{ book.author }}, {{ book.words }} words</p>
+        <p>{{ book.content }}</p>
+    {% endfor %}
+{% endblock content %}
